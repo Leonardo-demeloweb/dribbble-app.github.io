@@ -1,0 +1,54 @@
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand logo-position" href="#">
+    <img src="/assets/images/dribbble_logo.png" width="162" height="81" alt="">
+  </a>
+</nav>
+
+<form #f="ngForm"  (ngSubmit)="ngOnInit(f)"  class="subnav form-inline">
+        <div class="form-group select-position">
+          <mat-form-field>
+            <mat-select placeholder=" Search by types" style="color:white" [(ngModel)]="chosenType" [ngModelOptions]="{standalone: true}">
+              <mat-option *ngFor="let type of type" name="type" [value]="type.value" (click)="ngOnInit()" >
+                {{ type.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="form-group select-position2">
+          <mat-form-field>
+            <mat-select placeholder="Search by time" style="color:white" [(ngModel)]="chosenTime" [ngModelOptions]="{standalone: true}" >
+              <mat-option *ngFor="let time of time" name="time" [value]="time.value" (click)="ngOnInit()" >
+                {{ time.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+</form>
+
+<div class="row">
+    <div class="container-fluid">
+        <div *ngFor="let shot of shots">
+          <li class="box">
+            <img src="{{shot.images.hidpi}}" />
+            <div class="overlay">
+              <div class="social-wrap">
+                <h4><a target="_blank" href="{{shot.html_url}}">{{shot.title}}</a></h4>
+                <div class="social-icons">
+                  <ul>
+                    <li (click)="clickLike()"><i class="fa fa-heart"><span style="font-size:15px">{{shot.likes_count}}</span></i></li>
+                    <li><i class="fa fa-comment"><span style="font-size:15px">{{shot.comments_count}}</span></i></li>
+                    <li><a target="_blank" href="{{shot.html_url}}"><i class="fa fa-link"></i></a></li>
+                  </ul>
+               </div>
+              </div>
+            </div>
+          </li>
+        </div>
+    </div>
+</div>
+<footer class="subnav" style="text-align: center;">
+  <span>Dribbble API @ </span>
+  <a target="_blank" href="http://leonardo-desenvolvedor.surge.sh">Leonardo de Melo Desenvolvedor</a>
+</footer>
