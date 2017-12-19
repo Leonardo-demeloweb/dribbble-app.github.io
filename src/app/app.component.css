@@ -136,36 +136,34 @@
 }
 
 .select-position[_ngcontent-c4] {
-    display: block;
-    margin-left: 10px;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: 129px;
 }
 
 }
 
+@media screen and (min-width: 576px) {
+   .box {
+       position: relative;
+       display: block;
+       width: 30%;
+       height: auto;
+       line-height: 0;
+       float: left;
+       margin: 5px;
+   }
 
-@media only screen and (max-width: 576px){
-  .select-position[_ngcontent-c4][_ngcontent-c4] {
-    display: block;
-    margin-left: 100px;
-    margin-right: auto;
-}
-
-.select-position2[_ngcontent-c4][_ngcontent-c4] {
+   .select-position2[_ngcontent-c4] {
     display: block;
     margin-left: auto;
-    margin-right: 75px;
+    margin-right: 129px;
 }
 
-.box[_ngcontent-c4] {
-    position: relative;
-    display: block;
-    width: 30%;
-    height: auto;
-    line-height: 0;
-    float: left;
-    margin: 5px;
+.select-position[_ngcontent-c4] {
+  display: block;
+  margin-left: auto;
+  margin-right: 129px;
 }
-
 
 }
