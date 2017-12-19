@@ -151,19 +151,19 @@
        height: auto;
        line-height: 0;
        float: left;
-       margin: 5px;
+       margin: 22px;
    }
 
    .select-position2[_ngcontent-c4] {
     display: block;
     margin-left: auto;
-    margin-right: 129px;
+    margin-right: 500px;
 }
 
 .select-position[_ngcontent-c4] {
   display: block;
   margin-left: auto;
-  margin-right: 129px;
+  margin-right: -500px;
 }
 
 }
