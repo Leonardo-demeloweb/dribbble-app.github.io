@@ -118,7 +118,7 @@
     margin-bottom: 0;
 }
 
- @media screen and (max-width: 990px) {
+@media only screen and (max-width: 768px) {
    .box {
        position: relative;
        display: block;
@@ -126,7 +126,7 @@
        height: auto;
        line-height: 0;
        float: left;
-       margin: 7px;
+       margin: 5px;
    }
 
    .select-position2[_ngcontent-c4] {
@@ -137,16 +137,17 @@
 
 .select-position[_ngcontent-c4] {
     display: block;
-    margin-left: 129px;
+    margin-left: 10px;
     margin-right: auto;
 }
 
 }
 
-@media screen and (max-width: 576px) {
+
+@media only screen and (max-width: 576px){
   .select-position[_ngcontent-c4][_ngcontent-c4] {
     display: block;
-    margin-left: 86px;
+    margin-left: 100px;
     margin-right: auto;
 }
 
